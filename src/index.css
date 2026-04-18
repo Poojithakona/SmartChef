@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll (Landing page + navigation) */
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* DESIGN SYSTEM (Works for ALL pages) */
+@layer base {
+  :root {
+    --background: 30 40% 99%;
+    --foreground: 20 14% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 12%;
+
+    --primary: 18 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 28 100% 65%;
+
+    --secondary: 30 30% 96%;
+    --secondary-foreground: 20 14% 12%;
+
+    --muted: 30 20% 95%;
+    --muted-foreground: 20 8% 45%;
+
+    --accent: 0 75% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 140 60% 45%;
+    --warning: 45 95% 55%;
+
+    --border: 30 20% 90%;
+    --input: 30 20% 92%;
+    --ring: 18 95% 55%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(18 95% 55%), hsl(0 75% 55%));
+    --gradient-soft: linear-gradient(180deg, hsl(30 40% 99%), hsl(30 30% 96%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(20 14% 12% / 0.08);
+    --shadow-hover: 0 12px 32px -8px hsl(18 95% 55% / 0.25);
+    --shadow-glow: 0 0 40px hsl(28 100% 65% / 0.4);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+  }
 }

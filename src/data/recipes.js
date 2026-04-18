@@ -1,0 +1,156 @@
+const defaultSteps = (name) => [
+  {
+    title: "Prep ingredients",
+    description: `Gather and measure all ingredients needed for ${name}. Wash, chop and arrange them.`,
+    duration: 300,
+  },
+  {
+    title: "Heat the pan",
+    description: "Place a pan on medium heat and add a touch of oil. Wait until shimmering.",
+    duration: 120,
+  },
+  {
+    title: "Cook the base",
+    description: "Add aromatics and cook until fragrant, stirring frequently to prevent burning.",
+    duration: 180,
+  },
+  {
+    title: "Combine & simmer",
+    description: "Add the main ingredients, mix well and simmer to develop flavor.",
+    duration: 480,
+  },
+  {
+    title: "Plate & serve",
+    description: `Plate ${name} thoughtfully, garnish, and serve while warm. Enjoy!`,
+    duration: 60,
+  },
+];
+
+export const recipes = [
+  {
+    id: 1,
+    name: "Creamy Tomato Pasta",
+    type: "Veg",
+    time: 25,
+    rating: 4.7,
+    // Spaghetti Bolognese - pasta with tomato sauce
+    image: "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg",
+    tags: ["Quick"],
+    description: "Silky tomato sauce tossed with al dente penne and fresh basil.",
+    ingredients: [
+      "250g penne pasta", "2 cups tomato puree", "1/2 cup heavy cream",
+      "3 cloves garlic", "Fresh basil", "Olive oil", "Salt & pepper", "Parmesan",
+    ],
+    steps: [
+      { title: "Boil the pasta", description: "Cook penne in salted water until al dente.", duration: 540 },
+      { title: "Sauté garlic", description: "Heat oil, add garlic, cook until fragrant.", duration: 120 },
+      { title: "Make sauce", description: "Add tomato puree, simmer.", duration: 300 },
+      { title: "Add cream", description: "Stir cream and mix well.", duration: 180 },
+      { title: "Serve", description: "Mix pasta and garnish.", duration: 90 },
+    ],
+  },
+  {
+    id: 2,
+    name: "Spicy Grilled Chicken",
+    type: "Non-Veg",
+    time: 40,
+    rating: 4.8,
+    // Grilled chicken - exact match
+    image: "https://www.themealdb.com/images/media/meals/xvuyww1504882282.jpg",
+    tags: ["Healthy"],
+    description: "Marinated chicken grilled to perfection with bold spices.",
+    ingredients: ["500g chicken breast", "2 tsp chili powder", "1 tsp cumin", "3 cloves garlic", "2 tbsp oil", "1 lemon", "Salt & pepper"],
+    steps: defaultSteps("Spicy Grilled Chicken"),
+  },
+  {
+    id: 3,
+    name: "Chocolate Lava Cake",
+    type: "Dessert",
+    time: 20,
+    rating: 4.9,
+    // Chocolate cake - exact match
+    image: "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg",
+    tags: ["Quick"],
+    description: "Warm molten chocolate cake with a gooey center.",
+    ingredients: ["200g dark chocolate", "100g butter", "3 eggs", "80g sugar", "50g flour"],
+    steps: defaultSteps("Chocolate Lava Cake"),
+  },
+  {
+    id: 4,
+    name: "Avocado Quinoa Bowl",
+    type: "Veg",
+    time: 15,
+    rating: 4.6,
+    // Quinoa bowl - healthy bowl
+    image: "https://www.themealdb.com/images/media/meals/1550441882.jpg",
+    tags: ["Healthy", "Quick"],
+    description: "Nutritious quinoa bowl topped with fresh avocado and veggies.",
+    ingredients: ["1 cup quinoa", "1 avocado", "Cherry tomatoes", "Cucumber", "Lemon dressing", "Salt"],
+    steps: defaultSteps("Avocado Quinoa Bowl"),
+  },
+  {
+    id: 5,
+    name: "Margherita Pizza",
+    type: "Veg",
+    time: 35,
+    rating: 4.5,
+    // Pizza - exact match
+    image: "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg",
+    tags: [],
+    description: "Classic Italian pizza with fresh tomato, mozzarella and basil.",
+    ingredients: ["Pizza dough", "Tomato sauce", "Mozzarella", "Fresh basil", "Olive oil"],
+    steps: defaultSteps("Margherita Pizza"),
+  },
+  {
+    id: 6,
+    name: "Garlic Butter Shrimp",
+    type: "Non-Veg",
+    time: 18,
+    rating: 4.7,
+    // Shrimp/prawns - exact match
+    image: "https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg",
+    tags: ["Quick"],
+    description: "Juicy shrimp sautéed in rich garlic butter sauce.",
+    ingredients: ["500g shrimp", "4 tbsp butter", "5 cloves garlic", "1 lemon", "Parsley", "Salt & pepper"],
+    steps: defaultSteps("Garlic Butter Shrimp"),
+  },
+  {
+    id: 7,
+    name: "Berry Cheesecake",
+    type: "Dessert",
+    time: 60,
+    rating: 4.8,
+    // Cheesecake - exact match
+    image: "https://www.themealdb.com/images/media/meals/qpxvuq1511798906.jpg",
+    tags: [],
+    description: "Creamy no-bake cheesecake topped with fresh mixed berries.",
+    ingredients: ["500g cream cheese", "200g sugar", "Mixed berries", "Biscuit base", "Butter"],
+    steps: defaultSteps("Berry Cheesecake"),
+  },
+  {
+    id: 8,
+    name: "Green Salad",
+    type: "Veg",
+    time: 10,
+    rating: 4.4,
+    // Fresh salad - exact match
+    image: "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg",
+    tags: ["Healthy"],
+    description: "Crisp fresh garden salad with a light lemon vinaigrette.",
+    ingredients: ["Lettuce", "Cucumber", "Tomatoes", "Olives", "Feta cheese", "Lemon dressing"],
+    steps: defaultSteps("Green Salad"),
+  },
+  {
+    id: 9,
+    name: "Beef Tacos",
+    type: "Non-Veg",
+    time: 30,
+    rating: 4.6,
+    // Tacos - exact match
+    image: "https://www.themealdb.com/images/media/meals/typxww1468572445.jpg",
+    tags: [],
+    description: "Seasoned beef tacos with fresh salsa, cheese and sour cream.",
+    ingredients: ["500g ground beef", "Taco shells", "Salsa", "Cheddar cheese", "Sour cream", "Lettuce"],
+    steps: defaultSteps("Beef Tacos"),
+  },
+];
