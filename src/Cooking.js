@@ -27,7 +27,7 @@ const Cooking = () => {
           <p className="mb-4 text-gray-500">This recipe doesn't exist.</p>
 
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             className="bg-orange-500 text-white px-4 py-2 rounded"
           >
             Back to recipes
@@ -48,7 +48,7 @@ const Cooking = () => {
 
       {/* Header */}
       <header className="sticky top-0 bg-white border-b p-3 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2 text-sm font-semibold">
+        <Link to="/home" className="flex items-center gap-2 text-sm font-semibold">
           <ArrowLeft size={16} />
           Back
         </Link>
