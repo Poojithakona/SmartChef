@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🍳 SmartChef — AI-Powered Recipe Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SmartChef is an AI-powered recipe web application that helps users explore recipes, follow step-by-step cooking instructions, and receive real-time AI assistance for better cooking outcomes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+| Link | Description |
+|------|-------------|
+| 🌐 [smartchef-ten.vercel.app](https://smartchef-ten.vercel.app) | **Main Live URL** |
+| 🔗 [smartchef-git-main-poojithas-projects-920160eb.vercel.app](https://smartchef-git-main-poojithas-projects-920160eb.vercel.app) | Git Branch URL |
+| 🔗 [smartchef-p5p4eag8h-poojithas-projects-920160eb.vercel.app](https://smartchef-p5p4eag8h-poojithas-projects-920160eb.vercel.app) | Preview URL |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- 🔐 **Login / Signup** — Firebase Authentication
+- 🏠 **Home Page** — Browse, search and filter recipes
+- 🍲 **Cooking Page** — Step-by-step cooking with timer
+- 🤖 **AI Assistant** — Real-time cooking help powered by Groq (Llama 3.3 70B)
+- ➕ **Add Recipe** — Add your own recipes (saved to Firestore)
+- ⚙️ **Manage Recipes** — Edit or delete recipes
+- ❤️ **Favorites** — Save and view favorite recipes
+- 👤 **Profile** — View email and password in navbar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Technology | Usage |
+|------------|-------|
+| React.js | Frontend |
+| Tailwind CSS | Styling |
+| Firebase Auth | Authentication |
+| Firestore | Database |
+| Groq API (Llama 3.3) | AI Chat Assistant |
+| Vercel | Deployment |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏃 Run Locally
 
-### `npm run eject`
+```bash
+git clone https://github.com/Poojithakona/SmartChef.git
+cd SmartChef
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a `.env` file in root:
+```
+REACT_APP_GROQ_API_KEY=your_groq_api_key
+CI=false
+DISABLE_ESLINT_PLUGIN=true
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👨‍💻 Team
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Team TriAstra** — Built with ❤️ for SmartChef AI
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📧 smartchef.team@gmail.com
