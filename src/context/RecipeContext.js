@@ -17,7 +17,7 @@ const RecipeContext = createContext();
 
 export const RecipeProvider = ({ children }) => {
   const { user } = useAuth();
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState([]); // eslint-disable-line no-unused-vars
   const [userRecipes, setUserRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);
 

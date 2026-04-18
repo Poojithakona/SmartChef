@@ -32,7 +32,7 @@ const AIAssistant = ({ recipe, currentStep }) => {
 
     setMessages((p) => [...p, userMsg]);
     setInput("");
-    const imgToSend = pendingImage;
+    const imgToSend = pendingImage; // eslint-disable-line no-unused-vars
     setPendingImage(null);
     setLoading(true);
 

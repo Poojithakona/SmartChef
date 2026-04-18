@@ -82,6 +82,7 @@ const AuthModal = ({ mode, onClose, onSwitch }) => {
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [authMode, setAuthMode] = useState(null); // null | 'login' | 'signup'
+  // eslint-disable-next-line no-unused-vars
   const navigate = useNavigate();
 
   const features = [
